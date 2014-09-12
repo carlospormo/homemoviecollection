@@ -1,0 +1,24 @@
+<form name="movieForm" ng-controller="AddCtrl as ctrl" ng-submit="movieForm.$valid && ctrl.add()" novalidate>
+    <!--  Movie Form -->
+    <h4>Submit a Movie</h4>
+    <fieldset class="form-group">
+        <input type="text" ng-model="ctrl.movie.title" class="form-control" placeholder="Title" title="Title" required />
+    </fieldset>
+    <fieldset class="form-group">
+        <input type="text" ng-model="ctrl.movie.genre" class="form-control" placeholder="Sci-Fi,Action,Drama..." title="Genre" required />
+    </fieldset>
+    <fieldset class="form-group">
+        <select ng-model="ctrl.movie.rating" class="form-control" ng-options="stars for stars in [10,9,8,7,6,5,4,3,2,1]" title="Rating" required>
+            <option value>Rate the Movie</option>
+        </select>
+    </fieldset>
+    <fieldset class="form-group">
+        <input type="number" min="1900" max="2014" ng-model="ctrl.movie.year" class="form-control" placeholder="Year" title="Year" required />
+    </fieldset>
+    <fieldset class="form-group">
+        <input ng-model="ctrl.movie.actors" type="text" class="form-control" placeholder="Actors" title="Actors" required />
+    </fieldset>
+    <fieldset class="form-group">
+        <input type="submit" class="btn btn-primary pull-right" value="Submit Movie" />
+    </fieldset>
+</form>

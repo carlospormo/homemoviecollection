@@ -1,0 +1,16 @@
+{
+  "name": "home-movie-collection",
+  "description": "DataTensor Code Challenge",
+  "version": "0.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "angular-resource": "~1.2.x",
+    "bootstrap": "~3.2.0"
+  }
+}

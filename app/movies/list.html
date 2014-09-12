@@ -1,0 +1,18 @@
+<div ng-controller="MoviesCtrl as ctrl">
+    <div class="row">
+        <div class="col-sm-12">Search:<input type="text" ng-model="query" /></div>
+    </div>
+    <p></p>
+    <div class="row table-bordered">
+        <div class="col-sm-12">
+            <div class="row bg-info">
+                <div class="col-md-2"><h4>Title</h4></div>
+                <div class="col-md-2"><h4>Rating</h4></div>
+                <div class="col-md-2"><h4>Year</h4></div>
+                <div class="col-md-2"><h4>Genre</h4></div>
+                <div class="col-md-4"><h4>Actor(s)</h4></div>
+            </div>
+            <movie-info ng-repeat="movie in ctrl.movies | filter:query"></movie-info>
+        </div>
+    </div>
+</div>
